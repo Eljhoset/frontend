@@ -3,6 +3,7 @@
 /tmp
 /build
 /build_ts
+/lib
 
 # Logs
 logs
