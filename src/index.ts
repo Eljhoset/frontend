@@ -1,3 +1,3 @@
-import { AppComponent } from "./components/app";
+import { AppComponent } from './components/app'
 
-customElements.define('todo-app', AppComponent);
+export { AppComponent }

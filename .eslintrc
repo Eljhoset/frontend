@@ -7,8 +7,7 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "@lwc/eslint-plugin-lwc",
-    "no-loops"
+    "@lwc/eslint-plugin-lwc"
   ],
   "extends": [
     "eslint:recommended",
@@ -16,9 +15,6 @@
     "plugin:@typescript-eslint/recommended",
     "@salesforce/eslint-config-lwc/recommended"
   ],
-  "rules": {
-    "no-loops/no-loops": 2
-  },
   "env": {
     "browser": true,
     "amd": true,
