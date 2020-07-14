@@ -15,7 +15,23 @@ module.exports = {
   },
 
   module: {
-    rules: [{ test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }],
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'raw-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: [path.resolve(__dirname, 'node_modules')]
+              }
+            }
+          }
+        ]
+      },
+      { test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }
+    ],
   },
 
   plugins: [
